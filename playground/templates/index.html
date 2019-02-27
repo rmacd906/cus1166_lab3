@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block body %}
+<p>
+  <h1> Course List. </h1>
+</p>
+<p>
+  <ul>
+    {% for Course in courses %}
+      <li> Course Number:  <b>{{Course[0]}}</b> </li>
+      <li> Course Title: <span style="color:red;"> {{Course[1]}} </span></li>
+    {% endfor %}
+  </ul>
+</p>
+{% endblock %}
